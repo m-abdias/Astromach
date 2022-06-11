@@ -1,0 +1,214 @@
+/* ==== Estilização ===================== */
+
+/* ==== Global App ===================== */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
+}
+
+.Astromatch {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+main {
+  padding: 20px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  gap: 25px;
+  align-content: end;
+  padding: 5px 0 5px 5px;
+}
+
+footer button {
+  padding: 0 15px;
+  border-radius: 50px;
+  text-align: center;
+  border: none;
+}
+
+.clear {
+  background-color: rgb(41, 156, 147);
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.clear:hover {
+  color: rgb(41, 156, 147);
+  background-color: white;
+  border: 1px solid rgb(41, 156, 147);
+}
+
+/* ==== Tela inicial ===================== */
+.TelaInicial {
+  width: 400px;
+  height: 600px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.TelaInicial header {
+  height: 50px;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  position: relative;
+  padding: 0px 10px;
+
+  align-items: center;
+}
+
+.TelaInicial header img {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.TelaInicial header svg {
+  align-items: center;
+  display: block;
+
+  fill: rgb(117, 49, 146);
+  width: 2.25rem;
+  height: 2.25rem;
+
+  cursor: pointer;
+}
+
+.img-card-person img {
+  height: 25rem;
+  overflow: hidden;
+  transition: all 0.5s ease 0s;
+  animation: 0.5s ease 0s 1 normal forwards running none;
+  display: flex;
+  border-radius: 10px;
+  -webkit-box-align: center;
+  align-items: center;
+
+  width: 100%;
+}
+
+.description-person {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px 0 0 0;
+}
+
+.yes {
+  border: 1px solid rgb(114, 223, 114);
+  color: rgb(9, 82, 9);
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.yes:hover {
+  background-color: rgb(114, 223, 114);
+  color: white;
+}
+
+.no {
+  border: 1px solid rgb(233, 143, 143);
+  color: rgb(82, 9, 9);
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.no:hover {
+  background-color: rgb(233, 143, 143);
+  color: white;
+}
+
+/* ==== Tela Matches ===================== */
+.TelaMatche header {
+  height: 50px;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: start;
+  -webkit-box-align: center;
+  position: relative;
+  padding: 0px 10px;
+  flex-shrink: 0;
+
+  align-items: center;
+}
+
+.TelaMatche header img {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.TelaMatche header svg {
+  align-items: center;
+  display: block;
+  fill: rgb(74, 163, 151);
+  width: 1.5rem;
+  height: 1.5rem;
+
+  cursor: pointer;
+}
+
+.TelaMatche {
+  width: 400px;
+  height: 600px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid black;
+  border-radius: 2px;
+
+  box-shadow: rgb(0 0 0 / 6%) 0px 0px 8px;
+}
+
+.img-card-matche ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.img-card-matche li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 70px;
+  padding: 10px;
+  display: flex;
+  list-style: none;
+  width: 100%;
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+}
+
+.img-card-matche img {
+  height: 100%;
+  width: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
